@@ -1,0 +1,61 @@
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <div class="container-fluid">
+
+    <img src="\assets\images\2.png" routerLink="/landingpage">
+    <a class="navbar-brand"  ></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+      aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav me-auto">
+
+        <li class="nav-item">
+          <a class="nav-link"   routerLink="login">Login</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"  routerLink="register">Register</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"  routerLink="products">Products</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="request">Service</a>
+        </li>
+
+        <li class="form-group">
+          <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
+        </li>
+        <span class="fa fa-search search-icon"></span>
+
+        <li >
+          <a style="font-size:25px;"  class="fa fa-cart-plus cart-plus" routerLink="cart2">
+          <div style="font-size:9px;" class="badge bg-danger">{{totalItems}}</div></a>
+        </li>
+      
+
+        <li class="nav-item">
+          <a class="nav-link" id="logout"  routerLink="login">Logout</a>
+        </li>
+
+      </ul>
+
+      
+
+    </div>
+  </div>
+</nav>
