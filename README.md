@@ -1,1 +1,2 @@
-# E-serve
+# E-serve is a website designed primarily for use in the electronic gadget’s.The proposed system shows an user interface and update the app with all available options so that it eases the customer work. Customer can choose more than one item to make an order and can view order details before logging off. The order confirmation is sent to the customer. The order is placed in the queue and updated in the database and returned in real time. This system assists the staff to go through the orders in real time and process it efficiently with minimal errors.
+![image](https://user-images.githubusercontent.com/122270960/236154768-c4c56784-ad11-4694-8d2b-cf8882137216.png)
